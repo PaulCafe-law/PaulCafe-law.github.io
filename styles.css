@@ -567,6 +567,12 @@ img {
   object-fit: contain;
 }
 
+.school-mark-badge img {
+  width: auto;
+  height: 4.2rem;
+  object-fit: contain;
+}
+
 .school-mark-square img {
   width: 55%;
   object-fit: contain;
@@ -739,6 +745,10 @@ img {
 
   .school-mark {
     min-height: 7.8rem;
+  }
+
+  .school-mark-badge img {
+    height: 3.6rem;
   }
 }
 
