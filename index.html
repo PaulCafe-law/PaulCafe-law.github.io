@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucius | 張育榮</title>
+    <meta
+      name="description"
+      content="Lucius 張育榮的個人網站，聚焦於視覺語言模型、自主導航、UAV 與 AI Safety。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="回到頁首">
+          <span class="brand-mark">L</span>
+          <span class="brand-copy">
+            <strong>Lucius</strong>
+            <span>張育榮</span>
+          </span>
+        </a>
+
+        <nav class="nav">
+          <a href="#about">關於</a>
+          <a href="#work">研究與實作</a>
+          <a href="#education">學經歷</a>
+          <a href="#vision">方向</a>
+          <a href="#links">連結</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero section reveal" id="about">
+          <div class="hero-copy">
+            <p class="eyebrow">NCKU EE Graduate / Intelligent Computing M.S. Student</p>
+            <h1>讓系統不只看見，而是真的理解、規劃，並開始行動。</h1>
+            <p class="hero-intro">
+              我是 Lucius，張育榮。畢業於國立成功大學電機工程學系，現就讀
+              國立成功大學敏求智慧運算學院智慧運算碩士學位學程。我的興趣聚焦在
+              視覺語言模型、自主導航、UAV、Embodied AI，以及 AI Safety。
+            </p>
+            <p class="hero-intro">
+              我喜歡把語言、感知、規劃與控制串成一條完整鏈路，從模型理解到系統落地，
+              都希望它能在真實限制下穩定運作，而不只是停在 demo。
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work">看研究與實作</a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/PaulCafe-law"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub
+              </a>
+            </div>
+
+            <ul class="focus-list" aria-label="核心關鍵字">
+              <li>Vision-Language Models</li>
+              <li>UAV Semantic Navigation</li>
+              <li>Autonomous Systems</li>
+              <li>AI Safety</li>
+              <li>Embodied AI</li>
+            </ul>
+
+          </div>
+
+          <div class="hero-visual">
+            <div class="portrait-frame">
+              <span class="portrait-tag portrait-tag-top">Lucius</span>
+              <img src="./assets/profile.png" alt="Lucius 張育榮" class="portrait" />
+              <div class="portrait-note">
+                <span>Research track</span>
+                <strong>Language × Perception × Action</strong>
+              </div>
+            </div>
+            <div class="floating-card floating-card-main">
+              <span>Now building</span>
+              <strong>VLM-guided UAV semantic navigation</strong>
+            </div>
+            <div class="floating-card floating-card-side">
+              <span>Past work</span>
+              <strong>Vision navigation, diffusion, multimodal attack analysis</strong>
+            </div>
+          </div>
+
+          <div class="stat-grid hero-stat-grid">
+            <article class="stat-card">
+              <span class="stat-label">Current</span>
+              <strong>智慧運算碩士</strong>
+              <p>國立成功大學敏求智慧運算學院</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-label">Background</span>
+              <strong>成大電機畢業</strong>
+              <p>電機、控制、視覺、系統整合</p>
+            </article>
+            <article class="stat-card">
+              <span class="stat-label">Tools</span>
+              <strong>Python / C++ / PyTorch</strong>
+              <p>並持續擴展 ROS、Isaac Sim、模擬訓練流程</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section narrative reveal">
+          <div class="section-heading">
+            <p class="eyebrow">Profile</p>
+            <h2>我在意的是，智能系統能不能真的在複雜環境中工作。</h2>
+          </div>
+
+          <div class="narrative-grid">
+            <article class="panel panel-large">
+              <p>
+                在成大電機的訓練裡，我接觸了不同層次的系統問題，從電腦視覺到控制，
+                從軟體實作到硬體情境。真正吸引我的是 AI 與自主系統的交界處，
+                因為那裡需要的不只是單一模型能力，而是多模態理解、決策與控制的整合。
+              </p>
+              <p>
+                從自走車導航、擴散式生成，到 VQA 對抗攻擊分析，再到現在的無人機語意導航，
+                我逐漸建立自己的研究軸線：讓模型具備理解語意、預測後果與穩定執行的能力，
+                並在安全性與可靠性上保持足夠嚴謹。
+              </p>
+            </article>
+
+            <article class="panel panel-stack">
+              <div class="mini-block">
+                <span class="mini-label">現在</span>
+                <p>
+                  以 VLM 搭配 Flow Matching，嘗試讓 UAV 能理解自然語言目標，
+                  並轉換成路徑規劃與動作控制。
+                </p>
+              </div>
+              <div class="mini-block">
+                <span class="mini-label">關注</span>
+                <p>
+                  我特別在意感測誤差、延遲干擾、導航穩定性，以及系統在開放場景下的泛化能力。
+                </p>
+              </div>
+              <div class="mini-block">
+                <span class="mini-label">延伸</span>
+                <p>
+                  長期希望朝向 Embodied AI × Communication × Safety 前進，探索多機協同與 sim-to-real 的可能性。
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal" id="work">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2>研究與實作</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card-featured">
+              <div class="project-meta">
+                <span>Current research</span>
+                <span>UAV / VLM / Flow Matching</span>
+              </div>
+              <h3>UAV 語意導航系統</h3>
+              <p>
+                建立無人機模擬環境，研究視覺語言模型在語言導引場景中的應用，
+                讓系統能理解像「飛到紅色屋頂附近」這類語意指令，
+                並將其轉換為路徑規劃與控制決策。
+              </p>
+              <ul class="tag-row">
+                <li>VLM grounding</li>
+                <li>Language-guided navigation</li>
+                <li>Stability under noise and latency</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span>Course project</span>
+                <span>Computer Vision / Control</span>
+              </div>
+              <h3>自走車視覺導航</h3>
+              <p>
+                整合 A*、Dijkstra、PID、LQR 與 YOLO 偵測模型，完成在無 GPS 情境下
+                依賴視覺資訊進行路徑追蹤與自主導航的完整流程。
+              </p>
+              <ul class="tag-row">
+                <li>YOLO</li>
+                <li>Path planning</li>
+                <li>Planning-to-control pipeline</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span>Generative modeling</span>
+                <span>Diffusion / Multimodal</span>
+              </div>
+              <h3>基於擴散模型的服飾風格生成</h3>
+              <p>
+                以 diffusion 流程進行 text-to-image 實作，從雜訊出發學習服飾版型、
+                材質與風格的條件式表徵，完成本地訓練與推論驗證。
+              </p>
+              <ul class="tag-row">
+                <li>Diffusion</li>
+                <li>Conditional generation</li>
+                <li>Style synthesis</li>
+              </ul>
+            </article>
+
+            <article class="project-card">
+              <div class="project-meta">
+                <span>AI safety study</span>
+                <span>Multimodal robustness</span>
+              </div>
+              <h3>VQA 對抗樣本攻擊分析</h3>
+              <p>
+                針對 Visual Question Answering 模型設計對抗樣本，
+                測試多模態系統在精心擾動下的脆弱性，並重新思考真實應用中的穩健性需求。
+              </p>
+              <ul class="tag-row">
+                <li>Adversarial examples</li>
+                <li>VQA</li>
+                <li>AI Safety</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal" id="education">
+          <div class="section-heading">
+            <p class="eyebrow">Education & Experience</p>
+            <h2>學經歷</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-card">
+              <div class="school-mark school-mark-horizontal">
+                <img src="./assets/logo-ncku.png" alt="國立成功大學標誌" />
+              </div>
+              <div class="timeline-copy">
+                <span class="time-range">Current</span>
+                <h3>智慧運算碩士學位學程</h3>
+                <p>國立成功大學敏求智慧運算學院</p>
+                <p>
+                  以智慧運算為核心，延伸研究到 VLM、自主導航、UAV 與複雜場景下的系統整合。
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-card">
+              <div class="school-mark school-mark-square">
+                <img src="./assets/logo-ee.png" alt="成大電機系標誌" />
+              </div>
+              <div class="timeline-copy">
+                <span class="time-range">Graduate</span>
+                <h3>電機工程學系</h3>
+                <p>國立成功大學</p>
+                <p>
+                  在大學期間逐步把興趣收斂到人工智慧與自主系統，
+                  並透過專題與跨校課程累積感知、規劃、控制與生成模型的實作經驗。
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-card">
+              <div class="school-mark school-mark-text">
+                <span>2021</span>
+                <span>2022</span>
+              </div>
+              <div class="timeline-copy">
+                <span class="time-range">Leadership</span>
+                <h3>Google 軟體開發社社長</h3>
+                <p>校園技術社群經營</p>
+                <p>
+                  從技術交流到活動規劃，培養了我在團隊合作、溝通紀錄與專案推進上的穩定節奏。
+                </p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section reveal" id="vision">
+          <div class="section-heading">
+            <p class="eyebrow">Research Direction</p>
+            <h2>未來想往哪裡走</h2>
+          </div>
+
+          <div class="vision-grid">
+            <article class="vision-card">
+              <span class="vision-index">01</span>
+              <h3>Language to Action</h3>
+              <p>讓自然語言指令能真正驅動導航、規劃與控制，不只停留在描述理解。</p>
+            </article>
+            <article class="vision-card">
+              <span class="vision-index">02</span>
+              <h3>World Modeling</h3>
+              <p>把預測未來狀態的能力帶進自主系統，提升長期決策與場景泛化的品質。</p>
+            </article>
+            <article class="vision-card">
+              <span class="vision-index">03</span>
+              <h3>Safety in Deployment</h3>
+              <p>把 AI safety 放在系統層思考，確保模型在真實世界部署時仍可靠可控。</p>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer reveal" id="links">
+        <div>
+          <p class="eyebrow">Links</p>
+          <h2>連結</h2>
+        </div>
+        <div class="footer-links">
+          <a href="https://github.com/PaulCafe-law" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#top">Back to top</a>
+        </div>
+        <p class="footer-note">
+          Lucius / 張育榮，專注於多模態理解、自主導航與具備落地性的智慧系統。
+        </p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
