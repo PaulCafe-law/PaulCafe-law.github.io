@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>當 AI 開始自己行動，誰來踩剎車？ | Lucius</title>
+    <meta
+      name="description"
+      content="Lucius 的文章：當 AI 開始自己行動，誰來踩剎車？談自主系統的控制面、授權、邊界、干預與審計。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body class="article-page">
+    <div class="site-shell">
+      <div class="ambient ambient-one"></div>
+      <div class="ambient ambient-two"></div>
+
+      <header class="topbar">
+        <a class="brand" href="../index.html#top" aria-label="回到首頁">
+          <span class="brand-mark">L</span>
+          <span class="brand-copy">
+            <strong>Lucius</strong>
+            <span>張育榮</span>
+          </span>
+        </a>
+
+        <nav class="nav">
+          <a href="../index.html#about">關於</a>
+          <a href="../index.html#work">研究與實作</a>
+          <a href="../index.html#education">學經歷</a>
+          <a href="../index.html#vision">方向</a>
+          <a href="../index.html#articles" class="active">文章</a>
+          <a href="../index.html#links">連結</a>
+        </nav>
+      </header>
+
+      <main class="article-main">
+        <section class="article-hero">
+          <div class="article-wrap">
+            <p class="article-kicker">Articles / Essay 01</p>
+            <a class="article-backlink" href="../index.html#articles">返回首頁文章列表</a>
+            <h1>當 AI 開始自己行動，誰來踩剎車？</h1>
+            <p class="article-intro">
+              本文不談模型有多強，而是回到一個更底層的問題：當 AI 開始替企業真的採取行動，
+              人類要把控制權交到哪一步。場景不是核心，讓企業敢上線的那套控制機制，才是。
+            </p>
+            <ul class="article-meta">
+              <li>文章 / Articles</li>
+              <li>創業哲學</li>
+              <li>Autonomous Systems</li>
+              <li>AI Control</li>
+            </ul>
+          </div>
+        </section>
+
+        <div class="article-shell">
+          <section class="article-card article-card-copy">
+            <p class="article-card-label">本文主張</p>
+            <p>
+              企業真正卡住的不是「AI 做不做得到」，而是「人敢不敢交出去」。
+              如果沒有授權、監控、干預、審計這套完整閉環，自主系統就很難進到真實流程。
+            </p>
+            <div class="article-control-grid">
+              <div class="article-control-item">
+                <strong>授權層</strong>
+                <span>任務核可、權限有效期</span>
+              </div>
+              <div class="article-control-item">
+                <strong>邊界層</strong>
+                <span>禁區、風險閾值、自動剎車條件</span>
+              </div>
+              <div class="article-control-item">
+                <strong>干預層</strong>
+                <span>人工接管路徑、降級策略、緊急中斷</span>
+              </div>
+              <div class="article-control-item">
+                <strong>審計層</strong>
+                <span>全量日誌、軌跡回溯、責任歸因</span>
+              </div>
+            </div>
+          </section>
+
+          <article class="article-prose">
+            <section class="qa-block">
+              <p class="qa-label">Q（主持人）</p>
+              <p>過去半年你看了無數 AI 落地場景。一開始你的重心放在哪？</p>
+              <p class="qa-label qa-answer">A（創辦人）</p>
+              <p>
+                老實說，一開始我也在追場景。工地巡檢、農業監測、園區安防、物流調度……
+                哪一個最快變現？哪一個 PMF 最清晰？但越聊越發現，場景只是載體。
+              </p>
+              <p>
+                真正卡住企業上線的，從來不是「AI 做不做得到」，而是「人敢不敢交出去」。
+              </p>
+            </section>
+
+            <section class="qa-block">
+              <p class="qa-label">Q（主持人）</p>
+              <p>你提到「敢不敢交出去」，這聽起來很抽象。</p>
+              <p class="qa-label qa-answer">A（創辦人）</p>
+              <p>
+                一點也不抽象。企業缺的不是更聰明的模型，而是一套能兜底的權責機制。
+                很多人不想當第一個出事的人。
+              </p>
+              <p>
+                所以問題必須被拆解：任務誰審批？邊界畫在哪？什麼情況自動停機？人工怎麼接管？
+                出事後，決策鏈能不能完整回溯？「放心」這兩個字，比模型參數重得多。
+              </p>
+            </section>
+
+            <section class="qa-block">
+              <p class="qa-label">Q（主持人）</p>
+              <p>所以你現在的產品，其實是在解這套機制？</p>
+              <p class="qa-label qa-answer">A（創辦人）</p>
+              <p>
+                對。我們叫它「自主系統的控制面」。從無人機切入，因為它夠具體：空域、路徑、
+                風險熱區、接管協議都是現成語言。但底層我們拆成四層：
+              </p>
+              <ul class="article-list">
+                <li>授權層：任務核可、權限有效期</li>
+                <li>邊界層：地理 / 邏輯禁區、風險閾值、自動剎車條件</li>
+                <li>干預層：人工接管路徑、降級策略、緊急中斷</li>
+                <li>審計層：全量決策日誌、軌跡回溯、責任歸因</li>
+              </ul>
+              <p>不是讓 AI 更聰明，而是讓它更可控。</p>
+            </section>
+
+            <section class="qa-block">
+              <p class="qa-label">Q（主持人）</p>
+              <p>為什麼堅持做抽象層？直接做無人機軟體不是更快？</p>
+              <p class="qa-label qa-answer">A（創辦人）</p>
+              <p>
+                場景會換、模型會迭代、硬體會換代。但「授權 → 監控 → 干預 → 審計」的閉環不會變。
+              </p>
+              <p>
+                如果只做場景工具，我們只是另一個 ISV。但如果在自主系統前面先裝一扇門，
+                這套邏輯未來可以直接平移到機器人、Agent 集群、所有會觸發實體動作的 AI。
+              </p>
+              <p>
+                抽象層不是為了聽起來厲害，是為了活得久。
+              </p>
+            </section>
+
+            <section class="qa-block">
+              <p class="qa-label">Q（主持人）</p>
+              <p>你理想中這間公司跑出來，會長什麼樣子？</p>
+              <p class="qa-label qa-answer">A（創辦人）</p>
+              <p>
+                我希望它留下的不是一個場景裡的效率外掛，而是一套方法論。讓企業在面對會行動的 AI 時：
+                心裡有底、手上有閘門、出事有退路。
+              </p>
+              <p>
+                AI 跑得再快，也得有軌道。人該留在哪裡，機器就能安全地走到哪裡。
+              </p>
+            </section>
+
+            <section class="qa-block">
+              <p class="qa-label">Q（主持人）</p>
+              <p>最後一句話，給正在看這段文字的產品人或創業者？</p>
+              <p class="qa-label qa-answer">A（創辦人）</p>
+              <p>
+                別只盯著 AI 能多做什麼。先想清楚，你願意讓它失控嗎？
+              </p>
+              <p>
+                如果不願意，控制面就是下一代基礎設施。
+              </p>
+            </section>
+          </article>
+        </div>
+      </main>
+
+      <footer class="footer article-footer">
+        <div>
+          <p class="eyebrow">Articles</p>
+          <h2>繼續閱讀</h2>
+        </div>
+        <div class="footer-links">
+          <a href="../index.html#articles">回文章列表</a>
+          <a href="../index.html#top">回首頁</a>
+        </div>
+        <p class="footer-note article-footer-note">
+          這篇文章聚焦於自主系統的控制面，從無人機切入，討論授權、邊界、干預與審計。
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
